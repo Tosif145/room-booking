@@ -1,0 +1,77 @@
+/* FOOTER SECTION  */
+
+.footer {
+    color: white;
+    width: 100%;
+    background: rgb(120, 165, 200);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-inner {
+    width: 100%;
+    max-width: 800px; /* Ensure the maximum width for larger screens */
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping to the next line */
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.footer-item {
+    flex: 1 1 calc(25% - 10px); /* Initially set to fit four items in a row */
+    padding: 10px;
+    box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+.footer-item p {
+    color: white;
+    opacity: 0.8;
+}
+
+.footer-item .icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-item .icons img {
+    cursor: pointer;
+    width: 25px;
+}
+
+.footer-item .icons img:hover {
+    cursor: pointer;
+    width: 25px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+.footer-item .book {
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    background: rgba(58, 56, 56, 0.745);
+}
+
+.footer-item .book:hover {
+    cursor: pointer;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+/* Responsive adjustments for screens 600px or less */
+@media (max-width: 600px) {
+    .footer-item {
+        flex: 1 1 calc(50% - 10px); /* Adjust width to fit two items per row */
+    }
+}
+
+/* Responsive adjustments for mobile screens */
+@media (max-width: 400px) {
+    .footer-item {
+        flex: 1 1 100%; /* Make each item take full width */
+    }
+}

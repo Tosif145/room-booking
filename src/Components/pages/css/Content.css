@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css");
+.content {
+    background-image: url('../../../assets/cardsBackground.webp');
+    background-repeat: repeat;
+    background-position: top;
+    overflow: hidden;
+    transition: height 0.5s ease-in-out;
+}
+
+
+
+.search {
+    height: 150px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box; /* Ensure padding is included in the height */
+    text-align: center;
+    overflow: hidden; /* Hide any overflow */
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+
+.slide-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideIn 0.5s forwards;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Adding delay to each element */
+  .slide-in:nth-child(1) {
+    animation-delay: 0s;
+  }
+  
+  .slide-in:nth-child(2) {
+    animation-delay: 0.5s;
+  }
+  
+  .slide-in:nth-child(3) {
+    animation-delay: 1s;
+  }
+
+.search h5 {
+    color: rgb(41, 130, 197);
+    font-size: 16px;
+    opacity: 0.9;
+    margin: 0; /* Remove default margin */
+}
+
+.search p {
+    color: grey;
+    font-weight: 500;
+    font-size: 2.5rem; 
+    margin: 0; 
+    word-wrap: break-word; 
+}
+
+.search span {
+    color: rgb(41, 130, 197);
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 600px) {
+    .search p {
+        font-size: 1.2rem;
+    }
+
+    .search h5 {
+        font-size: 14px;
+    }
+}
+
+
+/* CARDS CONTAINER*/
+
+
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+
+/* INTRODUCTION  */
+.intro {
+    margin-top: 30px;
+    color: rgb(41, 130, 197);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+    text-align: center; /* Center text */
+}
+
+.intro h3 {
+    padding: 5px;
+    margin: 10px;
+    margin-top: 25px;
+    font-size: 1.7rem; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.intro p{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+.intro hr {
+    border-color: rgb(41, 130, 197);
+    width: 15px;
+}
+
+/* Responsive adjustments for screens 600px or less */
+@media (max-width: 600px) {
+    .intro {
+        width: 80%; /* Increase width for better readability */
+        margin: 20px; /* Reduce margin */
+    }
+
+    .intro h3 {
+        font-size: 1.5rem; /* Adjust heading size */
+    }
+
+    .intro p {
+        font-size: 1rem; /* Adjust paragraph size */
+    }
+
+    .intro hr {
+        width: 20px; /* Adjust hr width */
+    }
+}
+
+/* Responsive adjustments for screens 400px or less */
+@media (max-width: 400px) {
+    .intro {
+        width: 90%; /* Further increase width for smaller screens */
+        margin: 10px; /* Further reduce margin */
+    }
+
+    .intro h3 {
+        font-size: 1.2rem; /* Further adjust heading size */
+    }
+
+    .intro p {
+        font-size: 0.9rem; /* Further adjust paragraph size */
+    }
+
+    .intro hr {
+        width: 25px; /* Further adjust hr width */
+    }
+}
+
+
+/* CARDS */
+
+.cards {
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    gap: 40px;
+    margin-bottom: 100px;
+}
+
+.card {
+    font-family: 'Poppins', 'Helvetica Neue';
+    color: rgb(41, 130, 197);
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    flex: 1 1 calc(33.333% - 40px); /* Adjust width to fit three cards initially */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.card p {
+    font-size: 14px;
+}
+
+.card hr {
+    border-color: rgb(41, 130, 197);
+    width: 20px;
+    margin-bottom: 20px;
+}
+.card img{
+    height: 100%;
+    width: 100%;
+}
+
+.card a{
+    width: 100%;
+}
+
+.card button {
+    font-size: 14px;
+    width: 100%;
+    padding: 10px;
+    background: white;
+    border: none;
+    color: rgb(41, 130, 197);
+}
+
+.card button:hover {
+    background: rgb(41, 130, 197);
+    color: white;
+}
+
+/* Responsive adjustments for screens 800px or less */
+@media (max-width: 800px) {
+    .cards {
+        width: 100%;
+        gap: 20px; /* Adjust gap between cards for smaller screens */
+    }
+
+    .card {
+        flex: 1 1 calc(50% - 20px); /* Adjust width to fit two cards per row */
+    }
+
+    .card button{
+        font-size: 18px;
+    }
+}
+
+/* Responsive adjustments for screens 600px or less */
+@media (max-width: 600px) {
+    .card {
+        flex: 1 1 100%; /* Adjust width to fit one card per row */
+    }
+}
+
+
+
+
+
+
+
