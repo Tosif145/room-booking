@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css");
+
 .contact-content {
 
   background-repeat: repeat;
@@ -65,7 +66,7 @@
 
 .contact-info {
   position: relative;
-  margin: 10px;
+  /* margin: 10px; */
   padding: 20px;
   background: #FFFFFF;
   width: 90%;
@@ -183,8 +184,8 @@
 
 .contact-left li span a {
   word-break: break-word;
-  overflow-wrap: break-word; 
-  white-space: normal; 
+  overflow-wrap: break-word;
+  white-space: normal;
   text-decoration: none;
   color: white;
 }

@@ -78,15 +78,6 @@
 }
 
 /* Responsive adjustments for smaller screens */
-@media (max-width: 600px) {
-    .search p {
-        font-size: 1.2rem;
-    }
-
-    .search h5 {
-        font-size: 14px;
-    }
-}
 
 
 /* CARDS CONTAINER*/
@@ -133,6 +124,14 @@
 
 /* Responsive adjustments for screens 600px or less */
 @media (max-width: 600px) {
+
+    .search p {
+        font-size: 1.2rem;
+    }
+
+    .search h5 {
+        font-size: 14px;
+    }
     .intro {
         width: 80%; /* Increase width for better readability */
         margin: 20px; /* Reduce margin */
