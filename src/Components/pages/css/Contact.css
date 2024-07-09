@@ -41,6 +41,7 @@
 }
 
 .contact-fill {
+
   width: 100%;
   height: 70%;
   background: #F5F5F5;
@@ -69,13 +70,19 @@
   /* margin: 10px; */
   padding: 20px;
   background: #FFFFFF;
-  width: 90%;
+  width: 100%;
   height: 100%;
   display: flex;
-  gap: 5px;
+  flex-direction: row;
+  gap: 15px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
+
+.form-control, .contact-left{
+  flex: 1;
+  height: 100%;
+}
 
 
 
@@ -96,30 +103,31 @@
 
 
 
-.forms-container {
+ .form-control{
   position: relative;
   width: 50%;
+  display: flex;
   text-align: center;
-}
-
-.forms-container .form-control {
   justify-content: center;
   flex-direction: column;
-  height: 480px;
   transition: all 0.5s ease-in;
+  margin-top: 40px;
 }
 
-.forms-container .form-control h2 {
+ 
+
+ .form-control h2 {
   font-size: 2rem;
 }
 
-.forms-container .form-control form {
+ .form-control form {
   display: flex;
+  height: 100%;
   flex-direction: column;
-  margin: 0px 30px;
+  margin: 0px 20px;
 }
 
-.forms-container .form-control form input {
+ .form-control form input {
   margin: 10px 0px;
   border: none;
   padding: 15px;
@@ -127,7 +135,7 @@
   border-radius: 5px;
 }
 
-.forms-container .form-control form button {
+ .form-control form button {
   border: none;
   padding: 20px;
   margin-top: 5px;
@@ -137,33 +145,23 @@
   cursor: pointer;
 }
 
-.intros-container {
+
+
+ .contact-left {
   position: relative;
   text-align: center;
-}
-
-.intros-container .intro-control {
   font-family: 'Poppins', sans-serif;
   border-radius: 5px;
-  width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 100%;
   color: #fff;
   background: linear-gradient(170deg, #3b82f6, #2563eb);
   /* background: grey; */
   transition: all 0.5s ease-in;
 }
 
-.intros-container .intro-control .intro-control__inner {
-  margin: 0px 30px;
-}
 
-.contact-left {
-  display: flex;
-  flex-direction: column;
-}
 
 .contact-left ul {
   color: white;
@@ -221,8 +219,10 @@
     flex-direction: column;
   }
 
-  .forms-container {
+   .form-control{
+    margin-top: 0;
     width: 100%;
+    margin-bottom: 50px;
   }
 }
 
@@ -244,18 +244,18 @@
     flex-direction: column;
   }
 
-  .cnt-container .forms-container {
+  .cnt-container  {
     order: 2;
     width: 100%;
     height: 50vh;
   }
 
-  .cnt-container .forms-container .form-control {
+  .cnt-container  .form-control {
     position: absolute;
     height: 50vh;
   }
 
-  .cnt-container .forms-container .form-control.signup-form {
+  .cnt-container  .form-control.signup-form {
     left: 0%;
     margin-top: 70px;
   }
@@ -272,11 +272,11 @@
     height: 40vh;
   }
 
-  .change .forms-container .form-control.signup-form {
+  .change  .form-control.signup-form {
     transform: translateX(0%);
   }
 
-  .change .forms-container .form-control.signin-form {
+  .change  .form-control.signin-form {
     transform: translateX(0%);
   }
 

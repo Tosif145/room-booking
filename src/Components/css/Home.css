@@ -3,8 +3,8 @@
 
 .container{
    
-    /* background-image: url('../../assets/ayodhya.webp'); */
-    background-image: url('../../assets/Hotel.avif');
+    background-image: url('../../assets/ayodhya.webp');
+    /* background-image: url('../../assets/Hotel.avif'); */
     background-size: 95% 80%; 
     background-repeat: no-repeat;
     background-position: top; 
