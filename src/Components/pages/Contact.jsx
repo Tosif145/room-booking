@@ -22,16 +22,26 @@ const Contact = () => {
             <p>Contacts</p>
           </div>
           <div className="contact-info">
-              <div className="form-control signin-form">
-                <form action="#">
-                  <h2>Send a message</h2>
-                  <input type="text" placeholder="First Name" required />
-                  <input type="text" placeholder="Last Name" required />
-                  <input type="email" placeholder="Email" required />
-                  <input type="number" placeholder="Phone number" />
-                  <button>Send</button>
-                </form>
-              </div>
+          <form action="">
+            <h2>Send a message</h2>
+            <div className="input-group">
+                <input className="input" type="text" name="text" id="" />
+                <label className="label">First Name</label>
+            </div>
+            <div className="input-group">
+                <input className="input" type="text" name="text" id="" />
+                <label className="label">Last Name</label>
+            </div>
+            <div className="input-group">
+                <input className="input" type="email" name="email" id="" />
+                <label className="label">Email</label>
+            </div>
+            <div className="input-group">
+                <input className="input" type="number" name="number" id="" />
+                <label className="label">Phone Number</label>
+            </div>
+            <button>Send</button>
+        </form>
             <div className="contact-left">
               <h2>Contact Info</h2>
               <ul>

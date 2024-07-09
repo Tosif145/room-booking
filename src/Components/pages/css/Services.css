@@ -42,19 +42,20 @@
 
 .heading{
     margin: 10px;
-    background: #FFFFFF;;
     width: 35%;
     height: 80px;
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    
+    backdrop-filter: blur(30px);
+    box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
+    border: 3px solid rgba(255, 255, 255, 0.18);
 }
 
 .heading h2{
     font-weight: 700;
     font-size: 28px;
-    color:  grey;
+    color:  white !important;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -153,6 +154,17 @@
 
 /* MEDIA QUERY FOR MAIN SECTION */
 
+@media (max-width: 780px) {
+    .top-div {
+        width: 90% !important;
+
+    }
+
+    .info{
+        width: 100% !important;
+    }
+}
+
 /* Media Queries for screen sizes 500px and below */
 @media (max-width: 600px) {
     .main-div {
@@ -161,15 +173,13 @@
     }
 
     .top-div {
-        width: 100%;
-        height: auto;
-        margin-bottom: 20px;
+        width: 100% !important;
+
     }
 
     .heading {
-        width: 80% !important;
+        width: 50% !important;
         height: auto;
-        margin-left: 10px;
         margin-right: 10px;
     }
 
