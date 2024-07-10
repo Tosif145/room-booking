@@ -46,7 +46,7 @@ const Content = ({ setSelectedComponent }) => {
             <h3>Gallery</h3>
             <img src={galleryCard} alt="" />
             <hr />
-            <button onClick={() => handleClick('gallery')}   className="read"  >View</button>
+            <button onClick={() => handleClick('gallery')}   className="read">View</button>
           </div>
           <div className="card">
             <h3>Rooms</h3>

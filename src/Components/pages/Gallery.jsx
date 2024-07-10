@@ -25,7 +25,7 @@ const Gallery = () => {
     <div className="gallery-content">
       <div className="gallery-main-div">
         <div className="gallery-top-div">
-          <div className="heading">
+          <div className="gallery-heading">
             <p>Gallery</p>
           </div>
           <div className="gallery-info">

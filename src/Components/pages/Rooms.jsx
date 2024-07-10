@@ -16,9 +16,9 @@ import Footer from "../Footer";
 const Rooms = () => {
   return (
     <div id="room" className="rooms-content">
-      <div className="main-div">
-        <div className="top-div">
-        <div className="heading">
+      <div className="rooms-main-div">
+        <div className="rooms-top-div">
+        <div className="room-heading">
                 <h2>Rooms</h2>
             </div>
           <div className="room-grid">

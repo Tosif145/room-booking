@@ -27,10 +27,17 @@
     position: relative;
 }
 
-.heading{
+.gallery-heading{
     background: none;
+    width: 35%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-family: 'Poppins', sans-serif;
     color: white;
+    font-weight: 700;
+    font-size: x-large;
     margin-bottom: 10px;
     margin-left: 0;
     backdrop-filter: blur(30px);
@@ -123,6 +130,9 @@
 }
 
 @media (max-width: 800px){
+    .gallery-top-div{
+        width: 90%;
+    }
     .new-collections{
         gap: 6px;
     }
@@ -141,6 +151,10 @@
 }
 
 @media (max-width: 500px){
+
+    .gallery-heading{
+        width: 50%;
+    }
 
     .new-collections h1{
         font-size: 20px;

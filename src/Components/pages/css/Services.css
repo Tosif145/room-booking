@@ -3,16 +3,16 @@
 
 /* Main Divs */
 
-.main-div{
+.service-main-div{
     width: 100%;
-    height: 500px;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
 }
 
-.top-div{
+.service-top-div{
     margin-bottom: 60px;
     padding: 20px;
     width: 60% !important;
@@ -40,19 +40,20 @@
 
 /* Infromation section */
 
-.heading{
+.service-heading{
     margin: 10px;
+    margin-left: 0;
     width: 35%;
     height: 80px;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
     backdrop-filter: blur(30px);
     box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
     border: 3px solid rgba(255, 255, 255, 0.18);
 }
 
-.heading h2{
+.service-heading h2{
     font-weight: 700;
     font-size: 28px;
     color:  white !important;
@@ -62,13 +63,13 @@
 
 
 
-.info{
+.service-info{
     position: relative;
     margin: 0 !important;
     padding: 20px;
     padding-bottom: 0;
     background: #FFFFFF;
-    width: 90%;
+    width: 100%;
     height: calc(90% - 100px);
     display: flex;
     align-items:center;
@@ -155,40 +156,38 @@
 /* MEDIA QUERY FOR MAIN SECTION */
 
 @media (max-width: 780px) {
-    .top-div {
+    .service-top-div {
         width: 90% !important;
 
     }
 
-    .info{
+    .service-info{
         width: 100% !important;
     }
 }
 
 /* Media Queries for screen sizes 500px and below */
 @media (max-width: 600px) {
-    .main-div {
+    .service-main-div {
         flex-direction: column;
         height: auto;
     }
 
-    .top-div {
-        width: 100% !important;
+    .service-top-div {
+        width: 100% !important; 
 
     }
 
-    .heading {
-        width: 50% !important;
-        height: auto;
+    .service-heading {
         margin-right: 10px;
     }
 
-    .heading h2{
+    .service-heading h2{
         font-size: 20px !important;
     }
 
-    .info {
-        width: 100%;
+    .service-info {
+        width: 100% !important;
         height: auto;
         padding: 10px;
         margin: 0 auto;
@@ -236,9 +235,9 @@
     }
 }
 
-@media (max-width: 420) {
-    .top-div{
-       padding-left: 0 !important;
+@media (max-width: 420px) {
+    .service-heading{
+        width: 60%;
     }
 
 }

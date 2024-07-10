@@ -18,8 +18,8 @@ const Contact = () => {
     <div className="contact-content">
       <div className="contact-main-div">
         <div className="contact-top-div">
-          <div className="heading">
-            <p>Contacts</p>
+          <div className="contact-heading">
+            <h2>Contact</h2>
           </div>
           <div className="contact-info">
           <form action="">

@@ -3,7 +3,7 @@ import "./css/NavBar.css";
 import nav_dropdown from "../assets/nav_dropdown.png";
 import titleImg from "../assets/titleImg.webp";
 
-const NavBar = ({ setSelectedComponent }) => {
+const NavBar = ({ setSelectedComponent,selectedComponent }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeOption, setActiveOption] = useState('home');
   const menuRef = useRef();
@@ -27,7 +27,7 @@ const NavBar = ({ setSelectedComponent }) => {
 
 
   return (
-    <div className={`${activeOption === 'home'  ? 'nav': 'nav-change'}`}>
+    <div className={`${selectedComponent === 'home'  ? 'nav': 'nav-change'}`}>
       <div className="nav-inner">
         <div
           onClick={() => handleHome('home')}

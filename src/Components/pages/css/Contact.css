@@ -51,21 +51,27 @@
 
 /* Infromation section */
 
-.contact-heading h2 {
-  font-weight: 700;
-  font-size: 28px;
-  color: rgb(41, 130, 197);
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
 
-.heading {
+
+.contact-heading {
+  width: 35%;
+  height: 80px;
+  margin-bottom: 10px;
   font-size: 1.5rem;
   font-family: "Poppins", sans-serif;
-  font-weight: 800;
   color: white;
   backdrop-filter: blur(30px);
   box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
   border: 3px solid rgba(255, 255, 255, 0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-heading h2 {
+  font-weight: 700;
+  font-size: 28px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .contact-info {
@@ -143,8 +149,8 @@ input {
 .label {
   font-family: 'Poppins', sans-serif;
   position: absolute;
-  left: 15px;
-  top: -10px;
+  left: 35px;
+  /* top: -px; */
   color: #9e9e9e;
   pointer-events: none;
   transform: translateY(15px);
@@ -157,15 +163,17 @@ input {
 
 .input:focus  {
   outline: none;
-  border: 2px solid #080808 !important;
+  border: 2px solid #e8d7d7b5 !important;
 
 }
 
 .input:focus ~  label {
+  border-radius: 2px;
   transform: translateX(-10%) translateY(-50%) scale(0.9);
-  /* background-color: #212121; */
+  background-color: hsla(0, 57%, 36%, 0.096);
   padding: 0 .2em;
-  color: grey;
+  color: rgba(0, 0, 0, 0.63) ;
+  font-weight: 600;
 }
 
  .form-control{
@@ -216,6 +224,7 @@ input {
   position: relative;
   text-align: center;
   font-family: 'Poppins', sans-serif;
+  height: 500px;    /* To be changed later */
   border-radius: 5px;
   display: flex;
   justify-content: center;
@@ -224,6 +233,10 @@ input {
   background: linear-gradient(170deg, #3b82f6, #2563eb);
   /* background: grey; */
   transition: all 0.5s ease-in;
+}
+
+.contact-left h2{
+  padding-top: 10px;
 }
 
 
@@ -293,7 +306,7 @@ input {
 
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 680px) {
   .contact-top-div {
     width: calc(100% - 50px);
     /* margin-right: 60px; */
@@ -303,49 +316,13 @@ input {
     width: 100%;
   }
 
-  .cnt-container {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
+}
 
-  .cnt-container  {
-    order: 2;
+@media screen and (max-width: 420px) {
+  .contact-top-div{
     width: 100%;
-    height: 50vh;
   }
-
-  .cnt-container  .form-control {
-    position: absolute;
-    height: 50vh;
-  }
-
-  .cnt-container  .form-control.signup-form {
-    left: 0%;
-    margin-top: 70px;
-  }
-
-  .cnt-container .intros-container {
-    order: 1;
-    width: 100%;
-    left: 0%;
-    height: 40vh;
-  }
-
-  .cnt-container .intros-container .intro-control {
-    position: absolute;
-    height: 40vh;
-  }
-
-  .change  .form-control.signup-form {
-    transform: translateX(0%);
-  }
-
-  .change  .form-control.signin-form {
-    transform: translateX(0%);
-  }
-
-  .change .intros-container .intro-control {
-    transform: translateX(0%);
+  .contact-heading{
+    width: 60%;
   }
 }

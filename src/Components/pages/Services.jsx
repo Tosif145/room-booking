@@ -17,12 +17,12 @@ import Footer from "../Footer";
 const Services = () => {
   return (
     <div className="service-content">
-      <div className="main-div">
-        <div className="top-div">
-            <div className="heading">
+      <div className="service-main-div">
+        <div className="service-top-div">
+            <div className="service-heading">
                 <h2>Services</h2>
             </div>
-            <div className="info">
+            <div className="service-info">
                <div className="info-title">
                 <p><span>SERVICES  -------</span></p>
                 <p>Strive Only For The Best.</p>

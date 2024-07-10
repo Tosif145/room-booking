@@ -29,7 +29,7 @@ const Home = () => {
 
   return (
     <div className='container'>
-      <NavBar  setSelectedComponent={setSelectedComponent} />
+      <NavBar selectedComponent={selectedComponent}  setSelectedComponent={setSelectedComponent} />
       {renderComponent()}
     </div>
   );
