@@ -83,7 +83,7 @@ const NavBar = ({ setSelectedComponent,selectedComponent }) => {
               <hr />
             </div>
           </a>
-          <a href="https://wa.link/at5ion"><div onClick={() => handleClick('book')} className="book">Book Now</div></a>
+          <a className="btn-tag" href="https://wa.link/at5ion"><div onClick={() => handleClick('book')} className="book">Book Now</div></a>
           
         </div>
         <div className="dropdown">
@@ -96,8 +96,8 @@ const NavBar = ({ setSelectedComponent,selectedComponent }) => {
             MENU
           </button>
           <ul className={`dropdown-menu ${isOpen ? "show" : ""}`}>
-          <li  onClick={() => handleClick('home')} className={`item-hover dropdown-item ${activeOption !== 'home' ? 'about-change' : ''}`}>
-              <a className="about" href="#content">
+          <li  onClick={() => handleClick('home')} className={`item-hover  ${activeOption !== 'home' ? 'about-change' : ''}`}>
+              <a className="dropdown-item about" href="#content">
                 About Us
               </a>
             </li>
@@ -141,8 +141,8 @@ const NavBar = ({ setSelectedComponent,selectedComponent }) => {
                 Contact
               </a>
             </li>
-            <li    className="dropdown-item item-hover">
-              <a className="about" href="#map-container">
+            <li    className="item-hover">
+              <a className="dropdown-item about" href="#map-container">
                Location
               </a>
             </li>
