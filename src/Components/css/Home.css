@@ -5,11 +5,13 @@
    
     background-image: url('../../assets/ayodhya.webp');
     /* background-image: url('../../assets/Hotel.avif'); */
-    background-size: 95% 80%; 
+    background-size: 98% 80%; 
     background-repeat: no-repeat;
     background-position: top; 
     height: 100vh; 
+    width: 97vw;
     background-attachment: fixed; 
+    
   }
 
   /* NAV exclusive */
