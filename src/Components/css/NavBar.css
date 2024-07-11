@@ -15,6 +15,9 @@
     .navbar .btn-tag{
         margin-top: 0 !important;
     }
+    .option p {
+        font-size: 18px !important;
+    }
   }
 
 .nav {
