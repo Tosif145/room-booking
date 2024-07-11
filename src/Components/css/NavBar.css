@@ -1,5 +1,5 @@
 /* Container size in pixels for screens 1200px and wider */
-@media  (min-width: 1200px) {
+@media  (min-width: 1500px) {
     .nav-inner {
       width: 900px !important;
       height: 110px !important;
@@ -7,16 +7,13 @@
     }
 
     .navbar{
-        width: 90%;
+        width: 90% !important;
         display: flex;
         align-items: center;
         justify-content: center;
     }
     .navbar .btn-tag{
-        margin-top: 0;
-    }
-    .navbar .btn-tag .book{
-        margin-top: 0;
+        margin-top: 0 !important;
     }
   }
 
