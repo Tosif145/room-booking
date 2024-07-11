@@ -9,9 +9,12 @@ function App() {
 
   return (
     <>
+      <div className="border-container">
       <div className="main-container">
         <Home/>
       </div>
+      </div>
+      
     </>
   )
 }
