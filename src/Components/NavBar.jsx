@@ -96,12 +96,12 @@ const NavBar = ({ setSelectedComponent,selectedComponent }) => {
             MENU
           </button>
           <ul className={`dropdown-menu ${isOpen ? "show" : ""}`}>
-          <li onClick={() => handleClick('home')} className={`dropdown-item ${activeOption !== 'home' ? 'about-change' : ''}`}>
+          <li  onClick={() => handleClick('home')} className={`item-hover dropdown-item ${activeOption !== 'home' ? 'about-change' : ''}`}>
               <a className="about" href="#content">
                 About Us
               </a>
             </li>
-            <li 
+            <li className='item-hover' 
              onClick={() => handleClick('book')}
              
           >
@@ -109,7 +109,7 @@ const NavBar = ({ setSelectedComponent,selectedComponent }) => {
                 Book a room
               </a>
             </li>
-            <li 
+            <li className='item-hover' 
              onClick={() => handleClick('gallery')}
           
           >
@@ -117,7 +117,7 @@ const NavBar = ({ setSelectedComponent,selectedComponent }) => {
                 Gallery
               </a>
             </li>
-            <li 
+            <li className='item-hover' 
              onClick={() => handleClick('services')}
           
           >
@@ -125,7 +125,7 @@ const NavBar = ({ setSelectedComponent,selectedComponent }) => {
                 Services
               </a>
             </li>
-            <li 
+            <li className='item-hover' 
              onClick={() => handleClick('rooms')}
           
           >
@@ -133,7 +133,7 @@ const NavBar = ({ setSelectedComponent,selectedComponent }) => {
                 Rooms
               </a>
             </li>
-            <li 
+            <li className='item-hover' 
              onClick={() => handleClick('contact')}
           
           >
@@ -141,7 +141,7 @@ const NavBar = ({ setSelectedComponent,selectedComponent }) => {
                 Contact
               </a>
             </li>
-            <li   className="dropdown-item">
+            <li    className="dropdown-item item-hover">
               <a className="about" href="#map-container">
                Location
               </a>
