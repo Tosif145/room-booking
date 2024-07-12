@@ -24,7 +24,7 @@ const Rooms = () => {
           <div className="room-grid">
             <div className="room-card" data-sr-id="10">
               <div className="room-card-image">
-                <img src={small} alt="room" />
+                <img onClick={window.scrollTo(0,0)} className="room-img" src={small} alt="room" />
                 <div className="room-card-icons">
                   <span>
                     <img src={heart} alt="" />
@@ -53,7 +53,7 @@ const Rooms = () => {
             </div>
             <div className="room-card" data-sr-id="11">
               <div className="room-card-image">
-                <img src={large} alt="room" />
+                <img onClick={window.scrollTo(0,0)} className="room-img" src={large} alt="room" />
                 <div className="room-card-icons">
                 <span>
                     <img src={heart} alt="" />

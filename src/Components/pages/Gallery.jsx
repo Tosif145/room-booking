@@ -11,15 +11,8 @@ import photo_collections from "./data/photos";
 
 
 const Gallery = () => {
-  const [new_collection, setNew_collection] = useState([]);
-  useEffect(() => {
-    // fetch(`http://localhost:4000/newcollection`)
-    fetch(`https://shop-dep.vercel.app/newcollection`)
-      .then((response) => response.json())
-      .then((data) => setNew_collection(data));
-  }, []);
 
-  // console.log('new collection ', new_collection);
+ 
 
   return (
     <div className="gallery-content">
