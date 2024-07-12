@@ -156,6 +156,9 @@
     .intro hr {
         width: 20px; /* Adjust hr width */
     }
+     .card {
+        flex: 1 1 100%;
+    }
 }
 
 /* Responsive adjustments for screens 400px or less */
@@ -251,12 +254,7 @@
     }
 }
 
-/* Responsive adjustments for screens 600px or less */
-@media (max-width: 600px) {
-    .card {
-        flex: 1 1 100%; /* Adjust width to fit one card per row */
-    }
-}
+
 
 
 

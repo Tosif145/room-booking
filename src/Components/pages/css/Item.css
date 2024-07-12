@@ -11,34 +11,12 @@
 
 
 .item:hover {
-    transform: scale(1.05);
+    transform: scale(1.5);
 }
 
-@media (max-width: 1280px) {
-    .item-price-old {
-        font-size: 14px;
-    }
-}
 
-@media (max-width: 1024px) {
-    .item {
-        font-size: 13px;
-    }
 
-    .item-price-old {
-        font-size: 13px;
-    }
-}
 
-@media (max-width: 800px) {
-    .item {
-        font-size: 12px;
-    }
-
-    .item-price-old {
-        font-size: 12px;
-    }
-}
 
 @media (max-width: 500px) {
     .item {
