@@ -27,27 +27,30 @@
 }
 
 .gallery-heading{
-    background: none;
+    background: white;
     width: 35%;
     height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: 'Poppins', sans-serif;
-    color: white;
+    color: grey;
     font-weight: 700;
-    font-size: x-large;
     margin-bottom: 10px;
     margin-left: 0;
-    backdrop-filter: blur(30px);
-    box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
-    border: 3px solid rgba(255, 255, 255, 0.18);
+    border-radius: 10px;
+    
+}
+
+.gallery-heading p{
+    font-size: 1.5rem   ;
 }
 
 .gallery-info{
     /* padding: 0px; */
     background: #FFFFFF;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
 }
 
 .gallery-bottom-div {

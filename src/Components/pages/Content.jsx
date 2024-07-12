@@ -7,6 +7,7 @@ import location from '../../assets/location-card.png';
 
 import Location from "../Location";
 import Footer from "../Footer";
+import Contact from "./Contact";
 
 const Content = ({ setSelectedComponent }) => {
 
@@ -65,6 +66,7 @@ const Content = ({ setSelectedComponent }) => {
           </div>
         </div>
       </div>
+      <Contact/>
       <Location/>
       <Footer/>
     </div>

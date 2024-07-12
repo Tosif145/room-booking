@@ -15,82 +15,67 @@ import Footer from "../Footer";
 
 const Contact = () => {
   return (
-    <div className="contact-content">
-      <div className="contact-main-div">
-        <div className="contact-top-div">
-          <div className="contact-heading">
-            <h2>Contact</h2>
-          </div>
-          <div className="contact-info">
-          <form action="">
-            <h2>Send a message</h2>
-            <div className="input-group">
-                <input className="input" type="text" name="text" id="" />
-                <label className="label">First Name</label>
-            </div>
-            <div className="input-group">
-                <input className="input" type="text" name="text" id="" />
-                <label className="label">Last Name</label>
-            </div>
-            <div className="input-group">
-                <input className="input" type="email" name="email" id="" />
-                <label className="label">Email</label>
-            </div>
-            <div className="input-group">
-                <input className="input" type="number" name="number" id="" />
-                <label className="label">Phone Number</label>
-            </div>
-            <button>Send</button>
-        </form>
-            <div className="contact-left">
-              <h2>Contact Info</h2>
-              <ul>
-                <li>
-                  <span>
-                    <img src={direction} alt="" />
-                  </span>
-                  <span>
-                    Beside Barshal Water Tank, Manpur,
-                    <br /> Barhanti West Bengal 723156
-                  </span>
-                </li>
+    <section id="contact" className="section1">
+    <div className="container1">
+        <div className="contactInfo1"> 
+            <div>
+                <h2>Contact Info</h2>
+                <ul className="info">
+                    <li>
+                        <span><img src={direction}/></span>
+                        <span>Beside Barshal Water Tank,<br/>
+                          Manpur, Barhanti,<br/>
+                          West Bengal 723156</span>
+                        
+                    </li>
+                    <li>
+                        <span><img src={email}/></span>
+                        <span><a href="mailto: kkghosh0099@gmail.com">kkghosh0099@gmail.com</a></span>
+                    </li>
+                    <li>
+                        <span><img src={call}/></span>
+                        <span><a href="tel:+919007062180"> +91 9007062180 </a></span>
+                    </li>
 
-                <li>
-                  <span>
-                    <img src={email} alt="" />
-                  </span>
-                  <span>
-                    <a href="mailto: kkghosh0099@gmail.com">
-                      kkghosh0099@gmail.com
-                    </a>
-                  </span>
-                </li>
-                <li>
-                  <span>
-                    <img src={call} alt="" />
-                  </span>
-                  <span>
-                    <a href="tel:+919007062180"> +91 9007062180 </a>
-                  </span>
-                </li>
-              </ul>
-
-              <div className="social-icons">
-                <img src={facebook} alt="" />
-                <img src={instagram} alt="" />
-                <img src={twitter} alt="" />
-                <img src={linkedin} alt="" />
-              </div>
+                </ul>
             </div>
-          </div>
+            <ul className="sci">
+                <li><a href="#"><img src={facebook}/></a></li>
+                <li><a href="https://www.instagram.com/kingsukhguesthouse/" target="_blank"><img src={instagram}/></a></li>
+                <li><a href="#"><img src={twitter}/></a></li>
+                <li><a href="#"><img src={linkedin}/></a></li>
+                
+            </ul>
         </div>
-        <div className="contact-bottom-div">
-          <div className="contact-fill"></div>
-        </div>
-      </div>
-      <Location />
-      <Footer />
-    </div>
+            <div className="contactForm1">
+                <h2>Send a Message</h2>
+                <div className="formBox1">
+                <div className="inputBox1 w50">
+                    <input type="text" name="" required=""/>
+                    <span>First Name</span>
+                </div>
+                <div className="inputBox1 w50">
+                    <input type="text" required=""/>
+                    <span>Last Name</span>
+                </div>
+                <div className="inputBox1 w50">
+                    <input type="email" required=""/>
+                    <span>Email Address</span>
+                </div>
+                <div className="inputBox1 w50">
+                    <input type="text" required=""/>
+                    <span>Mobile Number</span>
+                </div>
+                <div className="inputBox1 w100">
+                    <textarea required=""></textarea>
+                    <span>Write your message here...</span>
+                </div>
+                <div className="inputBox1 w100">
+                    <input type="submit" value="Send"/>
+                </div>
+            </div>
+        </div> 
+</div></section>
   );
 };
 

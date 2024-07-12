@@ -67,13 +67,16 @@ const NavBar = ({ setSelectedComponent,selectedComponent }) => {
             <p>Rooms</p>
             <hr />
           </div>
+          <a href="#contact">
           <div
-            onClick={() => handleClick('contact')}
-            className={`option ${activeOption === 'contact' ? 'active' : ''}`}
+            onClick={() => handleClick('home')}
+            className={`option ${activeOption !== 'home' ? '' : ''}`}
           >
             <p>Contact</p>
             <hr />
           </div>
+          </a>
+
           <a href="#map-container">
             <div
             //  onClick={() => handleClick('home')}
@@ -134,10 +137,10 @@ const NavBar = ({ setSelectedComponent,selectedComponent }) => {
               </a>
             </li>
             <li className='item-hover' 
-             onClick={() => handleClick('contact')}
+             onClick={() => handleClick('home')}
           
           >
-              <a className="dropdown-item" href="#">
+              <a className="dropdown-item" href="#contact">
                 Contact
               </a>
             </li>

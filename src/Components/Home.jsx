@@ -17,8 +17,6 @@ const Home = () => {
         return <Services />;
       case 'rooms':
         return <Rooms />;
-      case 'contact':
-        return <Contact />;
       case 'gallery':
         return <Gallery />
       default:
