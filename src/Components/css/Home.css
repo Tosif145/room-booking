@@ -23,6 +23,22 @@
   
 }
 
-
-
-  
+/* Transitions */
+.zoom-enter {
+  transform: scale(0.9);
+  opacity: 0.5;
+}
+.zoom-enter-active {
+  transform: scale(1);
+  opacity: 1;
+  transition: transform 300ms ease-in-out, opacity 300ms ease-in-out;
+}
+.zoom-exit {
+  transform: scale(1);
+  opacity: 1;
+}
+.zoom-exit-active {
+  transform: scale(0.9);
+  opacity: 0.5;
+  transition: transform 300ms ease-in-out, opacity 300ms ease-in-out;
+}

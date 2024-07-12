@@ -130,6 +130,13 @@
     width: 35px;
 }
 
+@media (max-width: 950px) {
+    .intro {
+        width: 80%; /* Increase width for better readability */
+        margin: 20px; /* Reduce margin */
+    }
+}
+
 /* Responsive adjustments for screens 600px or less */
 @media (max-width: 600px) {
 
