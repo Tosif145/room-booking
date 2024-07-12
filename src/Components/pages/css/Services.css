@@ -5,7 +5,7 @@
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
     .service-top-div{
-        width: 860px !important;
+        width: 54rem !important;
         height: 570px !important;
     }
     .service-info{
@@ -26,7 +26,7 @@
 .service-top-div{
     margin-bottom: 60px;
     padding: 20px;
-    width: 60% !important;
+    /* width: 60% !important; */
     height: 90%;
     z-index: 1;
     position: relative;
