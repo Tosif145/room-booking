@@ -31,6 +31,7 @@ const Home = () => {
     <div className='container'>
       <NavBar selectedComponent={selectedComponent}  setSelectedComponent={setSelectedComponent} />
       {renderComponent()}
+     
     </div>
   );
 };

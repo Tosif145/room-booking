@@ -41,11 +41,12 @@
 }
 
 .contact-fill {
-
+  
+  background-image: url('../icons/palash.webp');
+  background-size: cover; 
   width: 100%;
   height: 70%;
-  background: #F5F5F5;
-
+ 
 }
 
 
@@ -59,10 +60,11 @@
   margin-bottom: 10px;
   font-size: 1.5rem;
   font-family: "Poppins", sans-serif;
-  color: white;
-  backdrop-filter: blur(30px);
+  background: white;
+  color: gray;
+  /* backdrop-filter: blur(30px);
   box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
-  border: 3px solid rgba(255, 255, 255, 0.18);
+  border: 3px solid rgba(255, 255, 255, 0.18); */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -85,6 +87,7 @@
   flex-direction: row;
   gap: 25px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
 }
 
 
@@ -230,10 +233,14 @@ input {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  color: #fff;
+  color: grey;
   background: linear-gradient(170deg, #3b82f6, #2563eb);
   /* background: grey; */
   transition: all 0.5s ease-in;
+  background-image: url('../icons/flower.jpg');
+  /* background-size: cover;  */
+  
+  
 }
 
 .contact-left h2{
@@ -243,7 +250,7 @@ input {
 
 
 .contact-left ul {
-  color: white;
+  color: grey;
   padding: 10px;
 }
 
@@ -258,13 +265,17 @@ input {
 }
 
 
+.contact-left ul li {
+  font-weight: 700;
+}
+
 
 .contact-left li span a {
   word-break: break-word;
   overflow-wrap: break-word;
   white-space: normal;
   text-decoration: none;
-  color: white;
+  color: grey;
 }
 
 .contact-left li span img {
