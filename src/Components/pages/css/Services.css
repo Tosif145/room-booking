@@ -3,8 +3,15 @@
 
 /* Main Divs */
 
-@media (min-width: 1500){
-   
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .service-top-div{
+        width: 860px !important;
+        height: 570px !important;
+    }
+    .service-info{
+        width: 810px !important;
+        height: 365px !important;
+    }
 }
 
 .service-main-div{
