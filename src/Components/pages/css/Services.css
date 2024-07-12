@@ -3,14 +3,27 @@
 
 /* Main Divs */
 
-@media  (min-width:0px) {
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .service-main-div{
+        height: 700px !important;
+    }
     .service-top-div{
-        width: 55rem !important;
-        height: 570px !important;
+        width: 70% !important;
+        height: auto !important;
+        display: flex;
+        flex-direction: column;
     }
     .service-info{
-        width: 810px !important;
-        height: 365px !important;
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .service-info .info-title{
+        margin-bottom: 30px;
+    }
+
+    .service-info p{
+        font-size: 1.7rem;
     }
 }
 
