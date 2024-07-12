@@ -3,9 +3,9 @@
 
 /* Main Divs */
 
-@media screen and (-webkit-min-device-pixel-ratio:0) {
+@media  (min-width:0px) {
     .service-top-div{
-        width: 54rem !important;
+        width: 55rem !important;
         height: 570px !important;
     }
     .service-info{
