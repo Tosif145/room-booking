@@ -31,11 +31,11 @@ p {
   
   
 /* Target Chrome */
-@media screen and (-webkit-min-device-pixel-ratio:0) {
+/* @media screen and (-webkit-min-device-pixel-ratio:0) {
   body {
     margin-left: 10px;
     margin-right: 10px;
     padding-left: 30px;
-      padding-right: 30px; /* Apply padding for Chrome */
+      padding-right: 30px; 
   }
-}
+} */
