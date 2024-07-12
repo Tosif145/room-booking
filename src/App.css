@@ -1,9 +1,11 @@
 
 .main-container{
-  /* width: 100vw;
+  /* width: 95vw;
   height: 90vh; */
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 14px;
+  padding-right: 14px;
+  margin-left: 15px;
+  margin-right: 15px;          /* for better rendering in chrome */
   display: flex;
   justify-content: center;
 }
