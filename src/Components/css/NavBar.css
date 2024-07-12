@@ -33,13 +33,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50em;
+    width: 50rem;
     height: 100px;
 
 }
 
 .navbar {
-    width: 40em;
+    width: 40rem;
     height: 50%;
     display: flex;
     justify-content: space-evenly;
@@ -52,7 +52,7 @@
 
 .option-home {
     cursor: pointer;
-    width: 6em;
+    width: 6rem;
     color: white;
     font-weight: 700;
     display: flex;
@@ -62,8 +62,8 @@
 }
 
 .option-home img {
-    padding-top: 2em;
-    width: 6em;
+    padding-top: 2rem;
+    width: 6rem;
 
 }
 
@@ -72,7 +72,7 @@
 }
 
 .option-home p:nth-child(2) {
-    font-size: 1.56em;
+    font-size: 1.56rem;
 }
 
 
