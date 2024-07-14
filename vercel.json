@@ -1,0 +1,40 @@
+{
+    "rewrites": [
+      { "source": "/(.*)", "destination": "/index.html" }
+    ]
+  }
+  
+
+/src
+    /assets
+    /Components
+       NavBar.jsx
+       Home.jsx
+       Location.css
+       NavBar.css
+      /css
+         Home.css
+         Footer.css
+         Location.css
+         NavBar.css
+         /pages
+           /css
+              Content.css
+              Services.css
+              Rooms.css
+              Contact.css
+              Gallery.css
+           /icons
+           data.js
+           Content.jsx
+           Services.jsx
+           Rooms.jsx
+           Contact.jsx
+           Gallery.jsx
+    App.css
+    App.jsx
+    maain.jsx
+/index.html
+/index.css
+/vite.config.js
+/package.json

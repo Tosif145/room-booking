@@ -16,7 +16,7 @@ import Footer from "../Footer";
 
 const Services = () => {
   return (
-    <div className="service-content">
+    <div data-testid="cypress-services" className="service-content">
       <div className="service-main-div">
         <div className="service-top-div">
             <div className="service-heading">

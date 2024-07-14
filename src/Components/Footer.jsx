@@ -9,7 +9,7 @@ import instagram from "../assets/instagram.png";
 
 const Footer = () => {
   return (
-    <div className="footer">
+    <div data-testid="cypress-footer" className="footer">
     <div className="footer-inner">
       <div className="footer-item">
         <h3>Kingsukh guest house</h3>

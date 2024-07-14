@@ -15,7 +15,7 @@ const Gallery = () => {
  
 
   return (
-    <div className="gallery-content">
+    <div data-testid="cypress-gallery" className="gallery-content">
       <div className="gallery-main-div">
         <div className="gallery-top-div">
           <div className="gallery-heading">

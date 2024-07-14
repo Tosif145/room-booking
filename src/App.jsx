@@ -1,3 +1,4 @@
+import React from 'react'
 import { useState } from 'react'
 import './App.css'
 import Home from './Components/Home'
@@ -9,7 +10,7 @@ function App() {
 
   return (
     <>
-      <div className="main-container">
+      <div data-testid="cypress-app" className="main-container">
         <Home/>
       </div>
     </>

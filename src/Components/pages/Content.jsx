@@ -16,7 +16,7 @@ const Content = ({ setSelectedComponent }) => {
   };
 
   return (
-    <div id="content" className="content">
+    <div data-testid="cypress-content" id="content" className="content">
       <div className="search">
         <h5 className="slide-in">Simple - Unique - Friendly</h5>
         <p className="slide-in" style={{ animationDelay: "0.5s" }}>

@@ -15,7 +15,7 @@ import Footer from "../Footer";
 
 const Rooms = () => {
   return (
-    <div id="room" className="rooms-content">
+    <div data-testid="cypress-rooms"  id="room" className="rooms-content">
       <div className="rooms-main-div">
         <div className="rooms-top-div">
         <div className="room-heading">

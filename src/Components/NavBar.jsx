@@ -6,7 +6,7 @@ import titleImg from "../assets/titleImg.webp";
 const NavBar = ({ setSelectedComponent,selectedComponent }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeOption, setActiveOption] = useState('home');
-  const menuRef = useRef();
+ 
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
@@ -27,13 +27,13 @@ const NavBar = ({ setSelectedComponent,selectedComponent }) => {
 
 
   return (
-    <div className={`${selectedComponent === 'home'  ? 'nav': 'nav-change'}`}>
+    <div data-testid="cypress-nav" className={`${selectedComponent === 'home'  ? 'nav': 'nav-change'}`}>
       <div className="nav-inner">
-        <div
+        <div  
           onClick={() => handleHome('home')}
           className={`option-home ${activeOption === 'home' ? 'active' : ''}`}
         >
-          <img src={titleImg} alt="Title" />
+          <img  src={titleImg} alt="Title" />
           <p>Kingsukh</p>
         </div>
         <div className="navbar">

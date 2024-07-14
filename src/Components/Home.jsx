@@ -25,10 +25,10 @@ const Home = () => {
   };
 
   return (
-    <div className='container'>
+    <div data-testid="cypress-home" className='container'>
       <NavBar selectedComponent={selectedComponent} setSelectedComponent={setSelectedComponent} />
-      <TransitionGroup>
-        <CSSTransition key={selectedComponent} timeout={300} classNames="zoom">
+      <TransitionGroup >
+        <CSSTransition key={selectedComponent} timeout={300} classNames="fade">
           <div>{renderComponent()}</div>
         </CSSTransition>
       </TransitionGroup>
