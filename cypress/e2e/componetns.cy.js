@@ -152,5 +152,12 @@ describe('Footer test', () => {
           cy.wrap($img).should('be.visible');
         });
     })
+
+    it('should navigate away from the current page when the Book Now button is clicked', () => {
+
+        cy.get('.btn-tag').click();
+    
+        cy.url().should('not.eq', 'http://localhost:5173/');
+      });
   })
 })
