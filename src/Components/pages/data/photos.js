@@ -12,16 +12,16 @@ import palash from '../icons/palash.webp';
 
 
 const photo_collections = [
-    { image: out },
-    { image: room },
-    { image: ayodhya },
-    { image: flower },
-    { image: large },
-    { image: mithonDam },
-    { image: recep },
-    { image: service },
-    { image: small },
-    { image: palash },
+    { id:0,  image: out },
+    { id:1,  image: room },
+    { id:2,  image: ayodhya },
+    { id:3,  image: flower },
+    { id:4,  image: large },
+    { id:5,  image: mithonDam },
+    { id:6,  image: recep },
+    { id:7,  image: service },
+    { id:8,  image: small },
+    { id:9,  image: palash },
 ];
 
 

@@ -22,10 +22,10 @@ const Gallery = () => {
             <p>Gallery</p>
           </div>
           <div className="gallery-info">
-            <div className="new-collections" id="new-cln">
+            <div data-testid="cypress-collections" className="new-collections" id="new-cln">
               <div className="collections">
-                {photo_collections.map((item, i) => {
-                  return <Item key={i} image={item.image} />;
+                {photo_collections.map((item,i) => {
+                  return <Item key={i} id={item.id} image={item.image} />;
                 })}
               </div>
             </div>

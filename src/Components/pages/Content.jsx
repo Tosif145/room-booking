@@ -42,7 +42,7 @@ const Content = ({ setSelectedComponent }) => {
             memories that linger long after your stay.
           </p>
         </div>
-        <div className="cards">
+        <div data-testid="cypress-cards" className="cards">
           <div className="card">
             <h3>Gallery</h3>
             <img src={galleryCard} alt="" />
