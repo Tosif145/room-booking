@@ -20,6 +20,7 @@ This project consists of three main parts:
 
 ## Technologies Used
   * **Frontend:** React, Vite, CSS
+  * **Testing:** Cypress
   * **Hosting:** Netlify, Vercel
 
 
